@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+
+    
+}
+
+
+.nav-bar{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-bar h1 span{
+    color: red;
+}
+
+.nav-bar ul{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar li{
+    list-style-type: none;
+    
+}
+
+
+.home{
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+
+.text{
+    padding: 10px;
+    color: rgb(55, 55, 63);
+}
+
+.text h1{
+    font-family: "Amatic SC";
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.but{
+    display: flex;
+
+}
+
+.but1{
+width: 100px;
+height: 40px;
+padding-top: 10px;
+padding-left: 10px;
+background-color: #CE1212;
+color: #fff;
+border-radius: 0 50px 50px 50px;
+}
+
+.but2{
+    width: 100px;
+    height: 40px;
+    padding-top: 10px;
+    page-break-inside: 10px;
+}
+.im:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+
+  .chefs{
+    color:rgb(55, 55, 63) ;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .chefs h1{
+font-family: "Amatic SC";
+  }
+
+  .chefs h1 span{
+    color:#CE1212
+  }
+
+
+  .cards{
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+  }
+  .car{
+    width: 33%;
+    margin:10px;
+    transition:transform 2s;
+    
+  }
+  
+
+
+  
+  .car img{
+    width: 100%;
+
+  }
+
+
+  .car:hover{
+      transform: scale(1.1,1.1);
+  }
+
+  .car1{
+    position: relative;
+  }
+  .icon{
+    width: 30px;
+    height: 100px;
+    background-color: rgba(255, 255,255, 0.5);
+    position: absolute;
+    right: 0;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+
+  }
+  .icon i{
+    display: block;
+    color: #fff;
+  }
+
+.car:hover .icon{
+    opacity: 1;
+}
+  
+.gallery{
+    text-align: center;
+    background-color:#EEEEEE;
+
+}
+.gallery h1{
+    font-family: "Amatic SC";
+    
+}
+.gallery h1 span{
+    color: #CE1212;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+}
+.gall{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "img1 img1 img1 img1   img2 img2 img2 img2   img3 img3 img3 img3"
+    "img4 img4 img4 img4   img2 img2 img2 img2   img5 img5 img5 img5"
+    "img4 img4 img4 img4   img6 img6 img6 img6   img7 img7 img7 img7";
+    gap: 5px;
+    overflow: hidden;
+}
+
+
+.img1{ 
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+
+.gall-1{
+    position: relative;
+}
+
+.gall-1:hover .layer{
+z-index: 100;
+}
+
+
+
+
+
+.layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-top:50%;
+    color: #fff;
+    z-index: -1;
+}
+
+.CONTACT h2{
+font-family: "Amatic SC";
+
+}
+.CONTACT span{
+    color: #CE1212;
+}
+
+.Our-Address{
+
+display: flex;
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    /*gap: 10px;*/
+}
+
+.con-1{
+    position: relative;
+    width:50%;
+    height: 100px;
+    background-color: #EEEEEE;
+    
+}
+
+
+.red{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #CE1212;
+    
+}
+
+.red i{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form{
+    margin: auto;
+    width: 80%;
+    
+    text-align: center;
+
+}
+.form input,textarea{
+    width: 100%;
+    height: 50px;
+}
+
+.form .button{
+    background-color: #CE1212;
+    border-radius: 50px;
+    width: 300px;
+    height: 20px;
+}
+
+
+
+.footer{
+    display: flex;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.part-1.part-2{
+    width: 33.3px;
+}
+
+
+ .img-part-1 img{
+    width: 50px;
+    height: 50px;
+}
+
+.part-1 span{
+   color: #CE1212;
+}
+
+.part-2 input{
+    display: inline-block;
+}
+
+.part-2-but{
+    width: 25%;
+    height: 20px;
+    background-color: #CE1212;
+
+}
+
+.part-2 .links{
+    display: flex;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+/*.part-2 lo{
+    text-align: center;
+}*/
+
+
+.part-2 a{
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.part-2 a:hover{
+    text-decoration-line: underline;
+    transform: scale(2px,2px);
+}
+
+
+
+.part-3{
+    width: 33.3%;
+}
+
+/*.part-3 i{
+   display: inline-block;
+}*/
+/* testttttttttttttt
+ */
+ .test{
+    display: flex;
+ }
